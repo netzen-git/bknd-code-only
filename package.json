@@ -1,0 +1,26 @@
+{
+   "name": "bknd-code-only",
+   "version": "0.0.0",
+   "private": true,
+   "type": "module",
+   "scripts": {
+      "deploy": "wrangler deploy --env production",
+      "dev": "vite",
+      "dev:cf": "wrangler dev",
+      "preview": "wrangler dev --env production",
+      "bknd": "PROXY=1 node --experimental-strip-types node_modules/.bin/bknd",
+      "bknd:assets": "npm run bknd -- copy-assets --out public",
+      "typegen": "wrangler types",
+      "predev": "npm run typegen",
+      "postinstall": "npm run typegen && npm run bknd:assets"
+   },
+   "dependencies": {
+      "bknd": "link:bknd"
+   },
+   "devDependencies": {
+      "@cloudflare/vite-plugin": "^1.12.3",
+      "typescript": "^5.9.2",
+      "vite": "^7.1.4",
+      "wrangler": "^4.28.1"
+   }
+}
