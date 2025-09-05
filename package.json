@@ -15,7 +15,7 @@
       "postinstall": "npm run typegen && npm run bknd:assets"
    },
    "dependencies": {
-      "bknd": "link:bknd"
+      "bknd": "^0.18.0-rc.2"
    },
    "devDependencies": {
       "@cloudflare/vite-plugin": "^1.12.3",
