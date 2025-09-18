@@ -21,6 +21,6 @@
       "@cloudflare/vite-plugin": "^1.12.3",
       "typescript": "^5.9.2",
       "vite": "^7.1.4",
-      "wrangler": "^4.28.1"
+      "wrangler": "^4.37.1"
    }
 }
