@@ -1,6 +1,7 @@
 {
    "$schema": "node_modules/wrangler/config-schema.json",
    "name": "cf-code-only",
+   "account_id": "ec31ed70bebb8db0862e8b8b3ead4c15",
    "main": "src/index.ts",
    "compatibility_date": "2025-09-15",
    "compatibility_flags": [
