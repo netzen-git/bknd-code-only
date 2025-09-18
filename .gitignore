@@ -147,6 +147,7 @@ dist
 # DynamoDB Local files
 
 .dynamodb/
+public/
 
 # TernJS port file
 
@@ -172,3 +173,4 @@ bknd-types.d.ts
 worker-configuration.d.ts
 .history
 appconfig.json
+public/manifest.json
